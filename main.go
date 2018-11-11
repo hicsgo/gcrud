@@ -5,8 +5,8 @@ import (
 )
 
 import (
-	//"gcrud/model"
-	//"gcrud/run"
+	"gcrud/run"
+	"gcrud/model"
 )
 
 /* ================================================================================
@@ -15,5 +15,12 @@ import (
  * ================================================================================ */
 
 func main() {
-
+	run.DatabaseConfig = &model.DatabaseConfig{
+		DatabaseName: "test",
+		Host:         "127.0.0.1",
+		Port:         "3306",
+		UserName:     "test",
+		PassWord:     "test",
+	}
+	run.Run()
 }

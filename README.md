@@ -1,7 +1,7 @@
 # gcrud
 
 ```
-func main(){
+func main() {
 	run.DatabaseConfig = &model.DatabaseConfig{
 		DatabaseName: "test",
 		Host:         "127.0.0.1",
@@ -10,5 +10,5 @@ func main(){
 		PassWord:     "your_mysql_password",
 	}
 	run.Run()
- }
+}
  ```

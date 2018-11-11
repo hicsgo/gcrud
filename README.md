@@ -1,6 +1,6 @@
 # gcrud
 
-
+```
 func main(){
 	run.DatabaseConfig = &model.DatabaseConfig{
 		DatabaseName: "test",
@@ -11,3 +11,4 @@ func main(){
 	}
 	run.Run()
  }
+ ```
